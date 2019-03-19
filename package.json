@@ -4,10 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "author": "zyq",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.3.4",
