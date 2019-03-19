@@ -2,6 +2,13 @@
 
 eslint是前端针对js代码的工具，目的就是为了统一的团队的代码风格以及规范，避免不必要的bug。
 
+### github分支说明
+
+1. master为基础版eslint
+2. webpack-eslint是eslint配合webpack版本
+3. githook-eslint是eslint配合git的钩子版本
+
+
 ### 安装
 
 安装分为当前项目安装和全局安装，不建议全局装。
